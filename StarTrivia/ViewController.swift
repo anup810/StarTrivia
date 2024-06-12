@@ -8,12 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var personApi = PersonAPi()
 
-    @IBOutlet weak var triviaBtn: UIButton!
-   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        personApi.getRandomPersonUrlSession()
       
        
 
