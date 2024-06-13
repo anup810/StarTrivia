@@ -6,8 +6,30 @@
 //
 
 import Foundation
-
+import Alamofire
 class PersonAPi{
+    //Web Request with Alamofire
+    
+    func getRandomPersonAlamo(id:Int, comletion: @escaping PersonResponseCompletion){
+        guard let url = URL(string: "\(PERSON_URL)\(id)") else {return}
+        Alamofire.request(url).responseJSON { (response) in
+            if let error = response.result.error{
+                debugPrint(error.localizedDescription)
+                comletion(nil)
+                return
+            }
+            
+            
+            guard let json = response.result.value as? [String:Any] else { return
+                comletion(nil)}
+            let person = self.parsePersonManual(json: json)
+            comletion(person)
+        }
+        
+        
+    }
+    
+    // WEB Request with URL Session
     func getRandomPersonUrlSession(id:Int, comletion: @escaping PersonResponseCompletion){
         
         
@@ -38,6 +60,7 @@ class PersonAPi{
     }
     
     private func parsePersonManual(json: [String:Any]) -> Person{
+//        let id = json["id"] as? String ?? ""
         let name = json["name"] as? String ?? ""
         let height = json["height"] as? String ?? ""
         let mass = json["mass"] as? String ?? ""
