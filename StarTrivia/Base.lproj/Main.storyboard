@@ -192,7 +192,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="6ti-zY-pyW">
                                         <rect key="frame" x="20" y="20" width="350" height="64"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSi-gA-EqE">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSi-gA-EqE" customClass="FadeEnableBtn" customModule="StarTrivia" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="74" height="64"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="homeworld 1"/>
@@ -200,7 +200,7 @@
                                                     <action selector="homeWorldClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yum-Zh-dcq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00Y-wP-5vm">
+                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00Y-wP-5vm" customClass="FadeEnableBtn" customModule="StarTrivia" customModuleProvider="target">
                                                 <rect key="frame" x="92" y="0.0" width="74" height="64"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="vehicles"/>
@@ -208,7 +208,7 @@
                                                     <action selector="vehiclesClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sl9-nv-fqg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRl-fn-2V5">
+                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRl-fn-2V5" customClass="FadeEnableBtn" customModule="StarTrivia" customModuleProvider="target">
                                                 <rect key="frame" x="184" y="0.0" width="74" height="64"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="starships"/>
@@ -216,7 +216,7 @@
                                                     <action selector="startShipClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Evk-Ea-X5h"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YE-p8-IAK">
+                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YE-p8-IAK" customClass="FadeEnableBtn" customModule="StarTrivia" customModuleProvider="target">
                                                 <rect key="frame" x="276" y="0.0" width="74" height="64"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="films"/>

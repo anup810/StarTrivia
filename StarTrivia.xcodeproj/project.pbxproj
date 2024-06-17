@@ -20,6 +20,7 @@
 		4A87BB062C19F7E700868AED /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87BB052C19F7E700868AED /* Constant.swift */; };
 		4A87BB092C1A04C000868AED /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87BB082C1A04C000868AED /* PersonApi.swift */; };
 		4A87BB0B2C1A24E300868AED /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87BB0A2C1A24E300868AED /* Person.swift */; };
+		4AC417FC2C208280008B32D0 /* FadeEnableBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC417FB2C208280008B32D0 /* FadeEnableBtn.swift */; };
 		E8DAFCBB15F5FEA0C5FB765E /* Pods_StarTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE988A93EF185F33C1C444A2 /* Pods_StarTrivia.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		4A87BB052C19F7E700868AED /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		4A87BB082C1A04C000868AED /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
 		4A87BB0A2C1A24E300868AED /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		4AC417FB2C208280008B32D0 /* FadeEnableBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeEnableBtn.swift; sourceTree = "<group>"; };
 		A4CBBB1CCFE37B23BEE91F21 /* Pods-StarTrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.release.xcconfig"; path = "Target Support Files/Pods-StarTrivia/Pods-StarTrivia.release.xcconfig"; sourceTree = "<group>"; };
 		EC82FA9072DF8EF5C7233B48 /* Pods-StarTrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.debug.xcconfig"; path = "Target Support Files/Pods-StarTrivia/Pods-StarTrivia.debug.xcconfig"; sourceTree = "<group>"; };
 		EE988A93EF185F33C1C444A2 /* Pods_StarTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				4A87BB022C19F76100868AED /* BlackBgView.swift */,
+				4AC417FB2C208280008B32D0 /* FadeEnableBtn.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A87BAE62C19CE2900868AED /* ViewController.swift in Sources */,
+				4AC417FC2C208280008B32D0 /* FadeEnableBtn.swift in Sources */,
 				4A87BB092C1A04C000868AED /* PersonApi.swift in Sources */,
 				4A87BB032C19F76100868AED /* BlackBgView.swift in Sources */,
 				4A87BB062C19F7E700868AED /* Constant.swift in Sources */,
