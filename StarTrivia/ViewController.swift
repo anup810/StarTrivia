@@ -19,6 +19,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var genderLabel: UILabel!
     
+    @IBOutlet weak var homeWorldBtn: UIButton!
+    
+    @IBOutlet weak var vehiclesBtn: UIButton!
+    
+    @IBOutlet weak var starShipBtn: UIButton!
+    
+    @IBOutlet weak var filmsBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -27,19 +34,34 @@ class ViewController: UIViewController {
 
     @IBAction func randomClick(_ sender: UIButton) {
         let random = Int.random(in: 1...87)
-        personApi.getRandomPersonUrlSession(id: 10) { (person) in
+        personApi.getRandomPersonUrlSession(id: random) { (person) in
             if let person = person{
-                self.nameLabel.text = person.name
-                self.heightLabel.text = person.height
-                self.massLabel.text = person.mass
-                self.hairLabel.text = person.hair
-                self.birthYearLabel.text = person.birthYear
-                self.genderLabel.text = person.gender
+                self.setupView(person: person)
                 
             }
         }
 
     }
+    func setupView(person:Person){
+        self.nameLabel.text = person.name
+        self.heightLabel.text = person.height
+        self.massLabel.text = person.mass
+        self.hairLabel.text = person.hair
+        self.birthYearLabel.text = person.birthYear
+        self.genderLabel.text = person.gender
+        
+        
+    }
     
+    @IBAction func homeWorldClicked(_ sender: UIButton) {
+    }
+    
+    @IBAction func vehiclesClicked(_ sender: UIButton) {
+    }
+    
+    @IBAction func startShipClicked(_ sender: UIButton) {
+    }
+    @IBAction func filmsClicked(_ sender: UIButton) {
+    }
 }
 
