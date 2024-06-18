@@ -11,7 +11,7 @@ class PersonAPi{
     //Web Request with Alamofire
     
     func getRandomPersonAlamo(id:Int, comletion: @escaping PersonResponseCompletion){
-        guard let url = URL(string: "\(PERSON_URL)\(1)") else {return}
+        guard let url = URL(string: "\(PERSON_URL)\(id)") else {return}
         Alamofire.request(url).responseJSON { (response) in
             if let error = response.result.error{
                 debugPrint(error.localizedDescription)
@@ -33,7 +33,7 @@ class PersonAPi{
     func getRandomPersonUrlSession(id:Int, comletion: @escaping PersonResponseCompletion){
         
         
-        guard let url = URL(string: "\(PERSON_URL)\(id)") else {return}
+        guard let url = URL(string: "\(PERSON_URL)\(1)") else {return}
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard error == nil else{
                 debugPrint(error.debugDescription)

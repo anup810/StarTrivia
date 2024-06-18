@@ -27,7 +27,6 @@ class VehiclesVC: UIViewController, PersonProtocol {
         vehicle = person.vehicleUrls
         nextBtn.isEnabled = vehicle.count > 1
         previousBtn.isEnabled = false
-        setButtonTitleColors()
         
         guard let firstVehicles = vehicle.first else {return}
         getVehicles(url: firstVehicles)
@@ -59,12 +58,10 @@ class VehiclesVC: UIViewController, PersonProtocol {
     @IBAction func nextClicked(_ sender: UIButton) {
         currentVehicles += 1
         setButtonState()
-        print(vehicle[currentVehicles])
     }
     @IBAction func previousClicked(_ sender: UIButton) {
         currentVehicles -= 1
         setButtonState()
-        print(vehicle[currentVehicles])
     }
     
     func setButtonState(){
@@ -80,8 +77,5 @@ class VehiclesVC: UIViewController, PersonProtocol {
         }
         getVehicles(url: vehicle[currentVehicles])
     }
-    func setButtonTitleColors() {
-        nextBtn.setTitleColor(.lightGray, for: .disabled)
-        previousBtn.setTitleColor(.lightGray, for: .disabled)
-    }
+
 }

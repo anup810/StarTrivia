@@ -14,6 +14,8 @@
 		4A6C42012C21BAA500E28E38 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C42002C21BAA500E28E38 /* Starjhol.ttf */; };
 		4A6C42042C21D97000E28E38 /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C42032C21D97000E28E38 /* Vehicles.swift */; };
 		4A6C42062C21DB4800E28E38 /* VehiclesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C42052C21DB4800E28E38 /* VehiclesAPI.swift */; };
+		4A6C42082C21EDD500E28E38 /* StarShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C42072C21EDD500E28E38 /* StarShip.swift */; };
+		4A6C420A2C21EE7E00E28E38 /* StarShipAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C42092C21EE7E00E28E38 /* StarShipAPI.swift */; };
 		4A87BAE22C19CE2900868AED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87BAE12C19CE2900868AED /* AppDelegate.swift */; };
 		4A87BAE42C19CE2900868AED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87BAE32C19CE2900868AED /* SceneDelegate.swift */; };
 		4A87BAE62C19CE2900868AED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87BAE52C19CE2900868AED /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 		4A6C42002C21BAA500E28E38 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
 		4A6C42032C21D97000E28E38 /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
 		4A6C42052C21DB4800E28E38 /* VehiclesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesAPI.swift; sourceTree = "<group>"; };
+		4A6C42072C21EDD500E28E38 /* StarShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShip.swift; sourceTree = "<group>"; };
+		4A6C42092C21EE7E00E28E38 /* StarShipAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipAPI.swift; sourceTree = "<group>"; };
 		4A87BADE2C19CE2900868AED /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A87BAE12C19CE2900868AED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A87BAE32C19CE2900868AED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 				4A87BB0A2C1A24E300868AED /* Person.swift */,
 				4A6C41F62C21AA2100E28E38 /* HomeWorld.swift */,
 				4A6C42032C21D97000E28E38 /* Vehicles.swift */,
+				4A6C42072C21EDD500E28E38 /* StarShip.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 				4A87BB082C1A04C000868AED /* PersonApi.swift */,
 				4A6C41F82C21AA7500E28E38 /* HomeWorldApi.swift */,
 				4A6C42052C21DB4800E28E38 /* VehiclesAPI.swift */,
+				4A6C42092C21EE7E00E28E38 /* StarShipAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -328,6 +334,8 @@
 				4A6C41F72C21AA2100E28E38 /* HomeWorld.swift in Sources */,
 				4A87BB0B2C1A24E300868AED /* Person.swift in Sources */,
 				4A87BAE22C19CE2900868AED /* AppDelegate.swift in Sources */,
+				4A6C42082C21EDD500E28E38 /* StarShip.swift in Sources */,
+				4A6C420A2C21EE7E00E28E38 /* StarShipAPI.swift in Sources */,
 				4A87BAE42C19CE2900868AED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
