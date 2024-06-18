@@ -7,8 +7,12 @@
 
 import UIKit
 
+protocol PersonProtocol {
+    var person: Person! {get set}
+}
 class ViewController: UIViewController {
     var personApi = PersonAPi()
+    var person: Person!
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
@@ -30,15 +34,16 @@ class ViewController: UIViewController {
         starShipBtn.isEnabled = false
         filmsBtn.isEnabled = false
         
-
+        
     }
-
+    
     @IBAction func randomClick(_ sender: UIButton) {
         let random = Int.random(in: 1...87)
         personApi.getRandomPersonAlamo(id: random) { (person) in
             if let person = person {
                 DispatchQueue.main.async {
                     self.setupView(person: person)
+                    self.person = person
                 }
             }
         }
@@ -57,24 +62,40 @@ class ViewController: UIViewController {
         starShipBtn.isEnabled = !person.starshipUrls.isEmpty
         filmsBtn.isEnabled = !person.filmUrls.isEmpty
         
-
-    }
-    
-
-    
-    @IBAction func homeWorldClicked(_ sender: UIButton) {
-       
-    }
-    
-    @IBAction func vehiclesClicked(_ sender: UIButton) {
         
     }
-    
-    @IBAction func startShipClicked(_ sender: UIButton) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if var destination = segue.destination as? PersonProtocol{
+            destination.person = person
+        }
+        //        switch segue.identifier {
+        //        case Segue.homeWorld.rawValue:
+        //            if let destination = segue.destination as? HomeWorldVC{
+        //                destination.person = person
+        //            }
+        //        case Segue.vehicles.rawValue:
+        //            if let destination = segue.destination as? VehiclesVC{
+        //                destination.person = person
+        //            }
+        //        case Segue.starShips.rawValue:
+        //            if let destination = segue.destination as? StarShipVC{
+        //                destination.person = person
+        //            }
+        //        case Segue.films.rawValue:
+        //            if let destination = segue.destination as? FilmsVC{
+        //                destination.person = person
+        //            }
+        //        default:
+        //            break
+        //        }
     }
     
-    @IBAction func filmsClicked(_ sender: UIButton) {
-       
-    }
+    //    enum Segue: String {
+    //    case homeWorld = "toHomeVC"
+    //    case vehicles = "toVehiclesVC"
+    //    case starShips = "toStarShipVC"
+    //    case films = "toFilmsVC"
+    //    }
+
+    
 }
