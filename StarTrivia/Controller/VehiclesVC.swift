@@ -10,6 +10,12 @@ import UIKit
 class VehiclesVC: UIViewController, PersonProtocol {
     var person : Person!
 
+    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var previousBtn: UIButton!
+    @IBOutlet weak var costLabel: UILabel!
+    @IBOutlet weak var makeLabel: UILabel!
+    @IBOutlet weak var modelLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         print(person.name)
@@ -28,4 +34,8 @@ class VehiclesVC: UIViewController, PersonProtocol {
     }
     */
 
+    @IBAction func nextClicked(_ sender: UIButton) {
+    }
+    @IBAction func previousClicked(_ sender: UIButton) {
+    }
 }
