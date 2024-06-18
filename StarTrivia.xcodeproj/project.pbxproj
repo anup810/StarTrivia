@@ -12,6 +12,8 @@
 		4A6C41FB2C21BA0800E28E38 /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C41FA2C21BA0700E28E38 /* Starjout.ttf */; };
 		4A6C41FF2C21BA4B00E28E38 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C41FE2C21BA4B00E28E38 /* Starjedi.ttf */; };
 		4A6C42012C21BAA500E28E38 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C42002C21BAA500E28E38 /* Starjhol.ttf */; };
+		4A6C42042C21D97000E28E38 /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C42032C21D97000E28E38 /* Vehicles.swift */; };
+		4A6C42062C21DB4800E28E38 /* VehiclesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C42052C21DB4800E28E38 /* VehiclesAPI.swift */; };
 		4A87BAE22C19CE2900868AED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87BAE12C19CE2900868AED /* AppDelegate.swift */; };
 		4A87BAE42C19CE2900868AED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87BAE32C19CE2900868AED /* SceneDelegate.swift */; };
 		4A87BAE62C19CE2900868AED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A87BAE52C19CE2900868AED /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 		4A6C41FA2C21BA0700E28E38 /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 		4A6C41FE2C21BA4B00E28E38 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		4A6C42002C21BAA500E28E38 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		4A6C42032C21D97000E28E38 /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
+		4A6C42052C21DB4800E28E38 /* VehiclesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesAPI.swift; sourceTree = "<group>"; };
 		4A87BADE2C19CE2900868AED /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A87BAE12C19CE2900868AED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A87BAE32C19CE2900868AED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 			children = (
 				4A87BB0A2C1A24E300868AED /* Person.swift */,
 				4A6C41F62C21AA2100E28E38 /* HomeWorld.swift */,
+				4A6C42032C21D97000E28E38 /* Vehicles.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			children = (
 				4A87BB082C1A04C000868AED /* PersonApi.swift */,
 				4A6C41F82C21AA7500E28E38 /* HomeWorldApi.swift */,
+				4A6C42052C21DB4800E28E38 /* VehiclesAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -315,6 +321,8 @@
 				4AC417FC2C208280008B32D0 /* FadeEnableBtn.swift in Sources */,
 				4AC418002C208843008B32D0 /* VehiclesVC.swift in Sources */,
 				4A87BB092C1A04C000868AED /* PersonApi.swift in Sources */,
+				4A6C42042C21D97000E28E38 /* Vehicles.swift in Sources */,
+				4A6C42062C21DB4800E28E38 /* VehiclesAPI.swift in Sources */,
 				4A87BB032C19F76100868AED /* BlackBgView.swift in Sources */,
 				4A87BB062C19F7E700868AED /* Constant.swift in Sources */,
 				4A6C41F72C21AA2100E28E38 /* HomeWorld.swift in Sources */,

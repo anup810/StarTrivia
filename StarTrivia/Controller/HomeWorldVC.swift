@@ -17,7 +17,6 @@ class HomeWorldVC: UIViewController, PersonProtocol {
     @IBOutlet weak var nameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(person.name)
         api.getHomeWorldApi(url: person.homeWorldUrl) { (homeworld) in
             if let homeworld = homeworld{
                 self.setupUI(homeworld: homeworld)
