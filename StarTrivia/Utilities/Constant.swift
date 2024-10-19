@@ -14,4 +14,5 @@ typealias PersonResponseCompletion = (Person?) -> Void
 typealias HomeworldResponseCompletion = (HomeWorld?) -> Void
 typealias VehiclesResponseCompletion = (Vehicles?) -> Void
 typealias StarShipResponseCompletion = (StarShip?) -> Void
+typealias FilmResponseCompletion = (Film?) -> Void
 
